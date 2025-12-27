@@ -1,0 +1,63 @@
+{
+  "installationFor": [
+    {
+      "id": "window",
+      "name": "Window",
+      "image": "images/window.jpg"
+    },
+    {
+      "id": "door",
+      "name": "Door",
+      "image": "images/door.jpg"
+    },
+    {
+      "id": "concrete",
+      "name": "Concrete / Wall",
+      "image": "images/concrete.jpg"
+    }
+  ],
+
+  "meshTypes": [
+    {
+      "id": "aluminium",
+      "name": "Aluminium Mesh",
+      "image": "images/mesh-aluminium.jpg",
+      "description": "Rust-free, durable, premium look"
+    },
+    {
+      "id": "steel",
+      "name": "Steel Mesh",
+      "image": "images/mesh-steel.jpg",
+      "description": "Extra strong, long-lasting protection"
+    },
+    {
+      "id": "fabric",
+      "name": "Fabric Mesh",
+      "image": "images/mesh-fabric.jpg",
+      "description": "Lightweight and economical option"
+    }
+  ],
+
+  "frameTypes": [
+    {
+      "id": "velcro",
+      "name": "Velcro Frame",
+      "image": "images/frame-velcro.jpg"
+    },
+    {
+      "id": "aluminium",
+      "name": "Aluminium Frame",
+      "image": "images/frame-aluminium.jpg"
+    },
+    {
+      "id": "wood",
+      "name": "Wood Frame",
+      "image": "images/frame-wood.jpg"
+    },
+    {
+      "id": "door-frame",
+      "name": "Door Frame System",
+      "image": "images/frame-door.jpg"
+    }
+  ]
+}
