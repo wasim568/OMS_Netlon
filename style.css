@@ -107,7 +107,7 @@ nav a{
 
 .card{
   background:#fff;
-  padding:32px;
+  padding:50px;
   border-radius:20px;
   box-shadow:0 8px 20px rgba(0,0,0,.06);
   transition:.3s
@@ -272,3 +272,4 @@ footer{
     padding:24px
   }
 }
+
