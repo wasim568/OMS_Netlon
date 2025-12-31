@@ -3,17 +3,17 @@
     {
       "id": "window",
       "name": "Window",
-      "image": "images/window.jpg"
+      "image": "https://m.media-amazon.com/images/I/71EqQwfopnL._SL1500_.jpg"
     },
     {
       "id": "door",
       "name": "Door",
-      "image": "images/door.jpg"
+      "image": "https://www.idbook.in/image/cache/catalog/DOOR/DO0120/DO012002-1150x873.jpg"
     },
     {
-      "id": "concrete",
-      "name": "Concrete / Wall",
-      "image": "images/concrete.jpg"
+      "id": "Any Other Surface (Walls or Balcony)",
+      "name": "Any Other Surface (Walls or Balcony)",
+      "image": "https://tse1.mm.bing.net/th/id/OIP.6IQjT2S8kYVCaZRe8kIPOwHaF7?rs=1&pid=ImgDetMain&o=7&rm=3"
     }
   ],
 
@@ -21,19 +21,19 @@
     {
       "id": "aluminium",
       "name": "Aluminium Mesh",
-      "image": "images/mesh-aluminium.jpg",
+      "image": "https://m.media-amazon.com/images/I/81VW25ANFBL._SL1500_.jpg",
       "description": "Rust-free, durable, premium look"
     },
     {
       "id": "steel",
       "name": "Steel Mesh",
-      "image": "images/mesh-steel.jpg",
+      "image": "https://tse2.mm.bing.net/th/id/OIP.e_sMBPVT7hyC6W2FHMQAYAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
       "description": "Extra strong, long-lasting protection"
     },
     {
       "id": "fabric",
       "name": "Fabric Mesh",
-      "image": "images/mesh-fabric.jpg",
+      "image": "https://5.imimg.com/data5/FR/GB/WS/SELLER-10899107/mosquito-netlon-1000x1000.jpg",
       "description": "Lightweight and economical option"
     }
   ],
@@ -42,22 +42,22 @@
     {
       "id": "velcro",
       "name": "Velcro Frame",
-      "image": "images/frame-velcro.jpg"
+      "image": "https://example.com/velcro-net.jpg"
     },
     {
       "id": "aluminium",
       "name": "Aluminium Frame",
-      "image": "images/frame-aluminium.jpg"
+      "image": "https://example.com/aluminium-net.jpg"
     },
     {
       "id": "wood",
       "name": "Wood Frame",
-      "image": "images/frame-wood.jpg"
+      "image": "https://example.com/wood-frame-net.jpg"
     },
     {
       "id": "door-frame",
       "name": "Door Frame System",
-      "image": "images/frame-door.jpg"
+      "image": "https://example.com/door-frame-net.jpg"
     }
-  ]
+  ]  
 }
