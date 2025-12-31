@@ -16,7 +16,7 @@
     <a href="#services">Services</a>
     <a href="#benefits">Benefits</a>
     <a href="#gallery">Gallery</a>
-    <a href="#contact" class="btn">Contact</a>
+    <a href="javascript:void(0)" class="btn" onclick="openContact()">Contact</a>
     <a href="calculator.html" class="btn">Browse Materials & Pricing</a>
   </nav>
 </header>
@@ -191,19 +191,30 @@
 </section>
 
 <!-- GALLERY -->
-<section class="section light" id="gallery">
-  <h2>Our Works</h2>
-  <div class="gallery">
-    <img src=".\Images\2.jpeg">
-      <img src=".\Images\3.jpeg">
-      <img src=".\Images\4.jpeg">
-      <img src=".\Images\7.jpeg">
-      <img src=".\Images\8.jpeg">
-      <img src=".\Images\9.jpeg">
-      <img src=".\Images\10.jpeg">
-      <img src=".\Images\11.jpeg">
-      <img src=".\Images\12.jpeg">
-      <img src=".\Images\13.jpeg">
+<section id="gallery">
+  <div class="gallery-wrapper">
+
+    <!-- LEFT BUTTON -->
+    <button class="gallery-btn left" onclick="scrollGallery(-1)">‹</button>
+
+    <div class="gallery-slider" id="gallerySlider">
+      <div class="gallery-track">
+        <img src="./Images/2.jpeg">
+        <img src="./Images/3.jpeg">
+        <img src="./Images/4.jpeg">
+        <img src="./Images/7.jpeg">
+        <img src="./Images/8.jpeg">
+        <img src="./Images/9.jpeg">
+        <img src="./Images/10.jpeg">
+        <img src="./Images/11.jpeg">
+        <img src="./Images/12.jpeg">
+        <img src="./Images/13.jpeg">
+      </div>
+    </div>
+
+    <!-- RIGHT BUTTON -->
+    <button class="gallery-btn right" onclick="scrollGallery(1)">›</button>
+
   </div>
 </section>
 
@@ -226,6 +237,23 @@
 <footer>
   © 2025 O.M.S Netlon Services – Premium mosquito netlon solutions
 </footer>
+<div class="contact-popup" id="contactPopup">
+  <div class="popup-box">
+    <span class="close" onclick="closeContact()">×</span>
 
+    <h3>Contact Us</h3>
+
+    <a href="https://wa.me/919884299626" class="btn">WhatsApp</a>
+    <a href="tel:9884299626" class="btn outline">Call Now</a>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Location">
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
