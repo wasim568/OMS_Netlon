@@ -38,7 +38,7 @@ nav a{margin-left:20px;text-decoration:none;color:#374151}
   display:flex;width:100%;
   animation:slide 15s infinite
 }
-.slides img{width:100%;height:100%;object-fit:contain}
+.slides img{width:50%;object-fit:cover}
 
 @keyframes slide{
   0%{transform:translateX(0)}
@@ -276,5 +276,122 @@ footer{
   font-size:22px;
   cursor:pointer;
 }
+/* Mind Map Layout */
+.mind-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
 
+.center-node {
+  background: #16a34a;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
 
+.map-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: relative;
+}
+
+/* Each step/node */
+.node {
+  position: relative;
+  padding: 15px 25px;
+  background: #fff;
+  border: 2px solid #16a34a;
+  border-radius: 10px;
+  width: 330px;
+  font-weight: 600;
+}
+
+/* Subtitle text inside */
+.node span {
+  display: block;
+  font-size: 14px;
+  color: #374151;
+  font-weight: normal;
+  margin-top: 6px;
+}
+
+/* Arrow connection */
+.node::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 25px;
+  background: #16a34a;
+}
+
+/* Last item has no arrow */
+.node:last-child::after {
+  display: none;
+}
+/* REVIEWS */
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.review-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rating {
+  color: #f59e0b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.review-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.jd-placeholder {
+  background: #fff9f0;
+  padding: 40px 20px;
+  border-radius: 12px;
+  border: 1px dashed #f59e0b;
+}
+
+.jd-stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.jd-stats strong {
+  color: #d84415;
+  display: block;
+  font-size: 20px;
+}
