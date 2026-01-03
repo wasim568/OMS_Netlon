@@ -39,6 +39,22 @@
 
   gtag('config', 'AW-17840336452');
   </script>
+  <!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17840336452/RjGVCMbw0dsbEMTc97pC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 </head>
 <body>
 
@@ -63,8 +79,12 @@
       high-quality Netlon mosquito mesh for windows & doors.
     </p>
     <div class="hero-actions">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUW9xZJ9nY-crXt76GbO4sFrfxq6dQ1cONjB1VBGRzrFiaaw/viewform?usp=publish-editor" class="btn">Get Free Measurement</a>
-      <a href="https://wa.me/919884299626" class="btn outline">Call / WhatsApp Now</a>
+      <a href="https://wa.me/919884299626" 
+   onclick="return gtag_report_conversion('https://wa.me/919884299626');" 
+   class="btn">WhatsApp</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeUW9xZJ9nY-crXt76GbO4sFrfxq6dQ1cONjB1VBGRzrFiaaw/viewform" 
+   onclick="return gtag_report_conversion('https://docs.google.com/forms/d/e/1FAIpQLSeUW9xZJ9nY-crXt76GbO4sFrfxq6dQ1cONjB1VBGRzrFiaaw/viewform');" 
+   class="btn">Get Free Measurement</a>>
     </div>
   </div>
 
@@ -354,13 +374,22 @@
   <div class="popup-box">
     <span class="close" onclick="closeContact()">×</span>
     <h3>Contact O.M.S Netlon</h3>
-    <a href="https://wa.me/919884299626" class="btn">WhatsApp</a>
-    <a href="tel:9884299626" class="btn outline">Call Now</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUW9xZJ9nY-crXt76GbO4sFrfxq6dQ1cONjB1VBGRzrFiaaw/viewform?usp=publish-editor" class="btn">Get Free Measurement</a>
+  <a href="https://wa.me/919884299626" 
+   onclick="return gtag_report_conversion('https://wa.me/919884299626');" 
+   class="btn">WhatsApp</a>
+
+<a href="tel:9884299626" 
+   onclick="return gtag_report_conversion('tel:9884299626');" 
+   class="btn outline">Call Now</a>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeUW9xZJ9nY-crXt76GbO4sFrfxq6dQ1cONjB1VBGRzrFiaaw/viewform" 
+   onclick="return gtag_report_conversion('https://docs.google.com/forms/d/e/1FAIpQLSeUW9xZJ9nY-crXt76GbO4sFrfxq6dQ1cONjB1VBGRzrFiaaw/viewform');" 
+   class="btn">Get Free Measurement</a>>
   </div>
 </div>
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
