@@ -395,3 +395,103 @@ footer{
   display: block;
   font-size: 20px;
 }
+#products table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+#products th {
+  background: #16a34a;
+  color: #fff;
+  padding: 18px;
+  font-weight: 600;
+  text-align: left;
+}
+
+#products td {
+  padding: 15px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+  color: #4b5563;
+}
+
+#products tr:last-child td {
+  border-bottom: none;
+}
+
+/* FAQ SECTION */
+#faq .faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#faq .faq-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+}
+
+#faq .faq-item:hover {
+  border-color: #16a34a;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.1);
+}
+
+#faq h3 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#faq h3::before {
+  content: "Q:";
+  color: #16a34a;
+  font-weight: bold;
+}
+
+#faq p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* SEO GEO-TAGGING SECTION (Locations) */
+.location-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.location-pill {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+}
+
+.location-pill:hover {
+  background: #16a34a;
+  color: #fff;
+  border-color: #16a34a;
+}
+
+/* TEXT HIGHLIGHTING FOR KEYWORDS */
+strong.keyword {
+  color: #16a34a;
+  font-weight: 600;
+}
